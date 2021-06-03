@@ -9,6 +9,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -274,9 +275,61 @@
         <!-- /.recommendations-top -->
       </div>
       <!-- /.recommendations-wrapper -->
+      <div class="recommendations-bottom">
+        <div class="recommendations-bottom__line"></div>
+      </div>
+      <!-- /.recommendations-line -->
     </div>
     <!-- /.container -->
   </div>
   <!-- /.recommendations -->
+  <div class="genres">
+    <div class="container">
+      <div class="genres-wrapper">
+        <div class="swiper-container mySwiper genres-container">
+          <div class="swiper-wrapper genres-swiper">
+            <div class="swiper-slide genres-swiper__slide">
+              <div class="genres-swiper__item">
+                <img src="img/icon-genres-1.svg" alt="" class="genres-swiper__img">
+                <h3 class="genres-swiper__title">Бизнес & Финансы</h3>
+                <span class="genres-swiper__text">Книги про мир бизнеса</span>
+              </div>
+            </div>
+            <div class="swiper-slide genres-swiper__slide">
+              <div class="genres-swiper__item">
+                <img src="img/icon-genres-2.svg" alt="" class="genres-swiper__img">
+                <h3 class="genres-swiper__title">Самомотиватия</h3>
+                <span class="genres-swiper__text">Книги о мотивации</span>
+              </div>
+            </div>
+            <div class="swiper-slide genres-swiper__slide">
+              <div class="genres-swiper__item">
+                <img src="img/icon-genres-3.svg" alt="" class="genres-swiper__img">
+                <h3 class="genres-swiper__title">Романы Теленовеллы</h3>
+                <span class="genres-swiper__text">Книги с крутыми историями</span>
+              </div>
+            </div>
+            <div class="swiper-slide genres-swiper__slide">
+              <div class="genres-swiper__item">
+                <img src="img/icon-genres-4.svg" alt="" class="genres-swiper__img">
+                <h3 class="genres-swiper__title">Навыки будущего</h3>
+                <span class="genres-swiper__text">Книги для самоподготовки</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="genres-wrapper__bottom">
+        <button class="genres-swiper__button">
+          <img class="genres-swiper__button-img" src="img/arrow.svg" alt="">
+        </button>
+      </div>
+      <!-- /.genres-wrapper -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.genres -->
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
