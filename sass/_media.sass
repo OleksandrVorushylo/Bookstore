@@ -9,6 +9,36 @@
       width: 500px
     &-book
       width: 400px
+  .recommendations
+    &-info
+      width: 748px
+      &__img
+        min-width: 119px
+        height: 177px
+        border-radius: 8px
+        object-fit: cover
+        margin: auto
+      &__info
+        margin-left: 10px
+      &__name
+        width: 100%
+        height: 96px
+        margin-top: 0
+      &__genres
+        margin-top: 4px
+      &__price
+        margin-top: 10px
+      &__wrapper
+        margin-top: 16px
+        flex-direction: column
+        align-items: start
+      &__fovorites
+        margin-left: 42px
+        margin-top: 16px
+      &__item
+        width: 286px
+    &-top
+      margin-left: 20px
 @media (max-width: 992px)
   .container
     max-width: 720px
@@ -32,7 +62,51 @@
           min-width: 246px
         &-outline
           min-width: 246px
+  .recommendations
+    &-wrapper
+      display: flex
+      flex-direction: column
+    &-info
+      width: 100%
+      &__img
+        min-width: 160px
+        height: 238px
+        border-radius: 8px
+        object-fit: cover
+        margin: 0
+      &__info
+        margin-left: 20px
+        width: 100%
+      &__name
+        width: 100%
+        height: 94px
+        margin-top: 4px
+      &__genres
+        margin-top: 6px
+      &__price
+        margin-top: 24px
+      &__wrapper
+        margin-top: 24px
+        width: 100%
+        flex-direction: row
+        align-items: center
+      &__fovorites
+        margin-left: 0
+        margin-right: 12px
+        margin-top: 5px
+        width: 18px
+      &__item
+        width: 348px
+    &-top
+      margin-top: 32px
+      margin-left: 0
+      &__wrapper
+        width: 100%
+      &__info
+        margin-left: 48px
 @media (max-width: 767px)
+  br
+    display: none
   .container
     max-width: 576px
     width: 92%
@@ -67,7 +141,85 @@
         margin-bottom: 39px
         margin-left: 0
         display: flex
+  .about
+    &-info
+      &__br
+        display: flex
+      &__title
 
+  .recommendations
+    padding-top: 57px
+    &-wrapper
+    &-info
+      width: 100%
+      &__title
+        font-size: 28px
+        line-height: 36px
+        text-align: center
+        margin-bottom: 72px
+      &__img
+        min-width: 96px
+        max-width: 96px
+        height: 137px
+        border-radius: 8px
+        object-fit: cover
+
+        margin-top: -35px
+      &__info
+        margin-left: 0
+        width: 100%
+        align-items: center
+      &__name
+        width: auto
+        height: auto
+        margin-top: 18px
+        text-align: center
+        font-size: 20px
+        line-height: 24px
+      &__genres
+        margin-top: 12px
+        font-size: 14px
+        line-height: 20px
+      &__price
+        margin-top: 16px
+        font-size: 16px
+        line-height: 20px
+        margin-right: 8px
+      &__wrapper
+        margin-top: 20px
+        width: 154px
+        flex-direction: row
+        align-items: center
+      &__fovorites
+        margin-left: 0
+        margin-right: 0
+        margin-top: 5px
+        width: 18px
+      &__item
+        width: 100%
+        height: 312px
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-bottom: 42px
+        &--sixth, &--fifth, &--fourth
+          display: none
+      &__button
+        min-width: 115px
+    &-top
+      margin-top: 32px
+      margin-left: 0
+      &__title
+        font-size: 28px
+        line-height: 36px
+        text-align: center
+      &__wrapper
+        width: 100%
+      &__info
+        margin-left: 48px
+      &__name
+        font-size: 16px
+        line-height: 24px
 @media (max-width: 576px)
   .container
     width: 89%
@@ -117,6 +269,49 @@
           margin-top: 15px
           height: 40px
           font-size: 16px
+  .recommendations
+    &-info
+      &__item
+        margin-bottom: 0
+        &--third, &--second
+          display: none
+      &__button
+        &-more
+          margin-top: 24px
+          font-size: 16px
+          line-height: 20px
+          text-transform: none
+          height: 48px
+    &-top
+      margin-top: 56px
+      &__wrapper
+        margin-top: 36px
+        padding: 26px 13px 0 13px
+        height: 803px
+      &__img
+        min-width: 96px
+        max-width: 96px
+        height: 142px
+      &__info
+        margin-left: 14px
+        width: 108px
+      &__name
+        font-family: 'Roboto Condensed', sans-serif
+        margin-top: 4px
+        font-size: 16px
+        line-height: 24px
+        font-weight: bold
+        letter-spacing: 0.2px
+      &__price
+        margin-top: 12px
+      &__button
+        margin-top: 14px
+        &-best
+          padding-top: 20px
+          padding-bottom: 20px
+      &__line
+        margin-top: 4px
+        width: 100%
 @media (max-width: 410px)
   .about
     &-book
