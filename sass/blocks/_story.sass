@@ -1,0 +1,109 @@
+.story
+  &-wrapper
+    display: flex
+    flex-direction: column
+    max-width: 1006px
+    margin: auto
+    &__top
+      display: flex
+      justify-content: space-between
+      margin-bottom: 20px
+    &__title
+      font-family: 'Roboto Condensed', sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 48px
+      line-height: 60px
+      letter-spacing: 0.2px
+      color: $dark
+    &__description
+      max-width: 360px
+      height: 128px
+      overflow: auto
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 32px
+      color: $gray
+      margin-right: 58px
+    &__video
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+    &__container
+      width: 315px
+      height: 286px
+    &__item
+      display: flex
+      justify-content: center
+      align-items: center
+      background-origin: border-box
+      background-repeat: no-repeat
+      background-position: center
+      background-size: cover
+      &--top
+        width: 1006px
+        height: 380px
+        background-image: url(../img/video/central-top.jpg)
+        margin-bottom: 30px
+      &--left
+
+        height: 200px
+        background-image: url(../img/video/left.jpg)
+      &--central
+
+        height: 200px
+        background-image: url(../img/video/central-bottom.jpg)
+      &--right
+
+        height: 200px
+        background-image: url(../img/video/right.jpg)
+    &__play
+      border: none
+      background-color: transparent
+      cursor: pointer
+      &--top
+        background-color: #fff
+        border: none
+        border-radius: 50%
+        width: 100px
+        height: 100px
+    &__icon
+      margin-top: 4px
+      &--top
+        margin: auto
+        margin-top: 4px
+    &__info
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      align-items: center
+      margin-top: 22px
+    &__autor
+      font-family: 'Roboto', sans-serif
+      color: $dark
+      letter-spacing: 0.2px
+      font-style: normal
+      font-weight: 500
+      font-size: 22px
+      line-height: 32px
+      margin-bottom: 10px
+    &__favorites
+      padding: 0
+      border: none
+      background-color: transparent
+      width: 14px
+      height: 21px
+      cursor: pointer
+      margin-bottom: 4px
+      &-icon
+      &-save
+        background-image: url(../img/video/favorites-save.png)
+        background-repeat: no-repeat
+    &__text
+      flex-basis: 100%
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 22px
+      color: $gray

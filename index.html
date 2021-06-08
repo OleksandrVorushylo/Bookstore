@@ -9,6 +9,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -53,12 +54,8 @@
           золотыми стратегиями ценообразования на творческую работу.
           </p>
           <div class="about-info__wrapper">
-            <button class="button about-info__button-primary">
-              <a href="https://cutt.ly/Ynk0QHu" class="about-info__link">Купить сейчас</a>
-            </button>
-            <button class="button about-info__button-outline">
-              <a href="https://michaeljanda.com/psychopricing/" class="about-info__link">Читать демо</a>
-            </button>
+            <a href="https://cutt.ly/Ynk0QHu" class="button about-info__button-primary about-info__link" target="_blank">Купить сейчас</a>
+            <a href="https://michaeljanda.com/psychopricing/" class="button about-info__button-outline about-info__link" target="_blank">Читать демо</a>
           </div>
           <!-- /.about-info__wrapper -->
         </div>
@@ -89,11 +86,10 @@
               <span class="recommendations-info__genres">Art & Design</span>
               <span class="recommendations-info__price">$25.00</span>
               <div class="recommendations-info__wrapper">
-                <button class="recommendations-info__button">
-                  <a href="#" class="recommendations-info__link">Купить</a>
+                <button class="recommendations-info__button">Купить
                 </button>
                 <button class="recommendations-info__fovorites">
-                  <img src="img/heart.png" alt="Icon: Favorites" class="recommendations-info__icon">
+                  <!-- <img src="img/heart.png" alt="Icon: Favorites" class="recommendations-info__icon"> -->
                 </button>
               </div>
               <!-- /.recommendations-info__wrapper -->
@@ -110,11 +106,9 @@
               <span class="recommendations-info__genres">Education</span>
               <span class="recommendations-info__price">$28.00</span>
               <div class="recommendations-info__wrapper">
-                <button class="recommendations-info__button">
-                  <a href="#" class="recommendations-info__link">Купить</a>
+                <button class="recommendations-info__button">Купить
                 </button>
-                <button class="recommendations-info__fovorites">
-                  <img src="img/heart.png" alt="Icon: Favorites" class="recommendations-info__icon">
+                <button  id="favorites-5" class="recommendations-info__fovorites">
                 </button>
               </div>
               <!-- /.recommendations-info__wrapper -->
@@ -131,11 +125,9 @@
               <span class="recommendations-info__genres">Novel</span>
               <span class="recommendations-info__price">$19.50</span>
               <div class="recommendations-info__wrapper">
-                <button class="recommendations-info__button">
-                  <a href="#" class="recommendations-info__link">Купить</a>
+                <button class="recommendations-info__button">Купить
                 </button>
-                <button class="recommendations-info__fovorites">
-                  <img src="img/heart.png" alt="Icon: Favorites" class="recommendations-info__icon">
+                <button id="favorites-6" class="recommendations-info__fovorites">
                 </button>
               </div>
               <!-- /.recommendations-info__wrapper -->
@@ -152,11 +144,9 @@
               <span class="recommendations-info__genres">Novel</span>
               <span class="recommendations-info__price">$20.00</span>
               <div class="recommendations-info__wrapper">
-                <button class="recommendations-info__button">
-                  <a href="#" class="recommendations-info__link">Купить</a>
+                <button class="recommendations-info__button">Купить
                 </button>
                 <button class="recommendations-info__fovorites">
-                  <img src="img/heart.png" alt="Icon: Favorites" class="recommendations-info__icon">
                 </button>
               </div>
               <!-- /.recommendations-info__wrapper -->
@@ -173,11 +163,9 @@
               <span class="recommendations-info__genres">Business</span>
               <span class="recommendations-info__price">$23.00</span>
               <div class="recommendations-info__wrapper">
-                <button class="recommendations-info__button">
-                  <a href="#" class="recommendations-info__link">Купить</a>
+                <button class="recommendations-info__button">Купить
                 </button>
                 <button class="recommendations-info__fovorites">
-                  <img src="img/heart.png" alt="Icon: Favorites" class="recommendations-info__icon">
                 </button>
               </div>
               <!-- /.recommendations-info__wrapper -->
@@ -194,11 +182,9 @@
               <span class="recommendations-info__genres">Motivation</span>
               <span class="recommendations-info__price">$23.00</span>
               <div class="recommendations-info__wrapper">
-                <button class="recommendations-info__button">
-                  <a href="#" class="recommendations-info__link">Купить</a>
+                <button class="recommendations-info__button">Купить
                 </button>
                 <button class="recommendations-info__fovorites">
-                  <img src="img/heart.png" alt="Icon: Favorites" class="recommendations-info__icon">
                 </button>
               </div>
               <!-- /.recommendations-info__wrapper -->
@@ -221,8 +207,7 @@
                 <h3 class="recommendations-top__name">Sprint : Solve,
                 Test in 5 Days</h3>
                 <span class="recommendations-top__price">$23.00</span>
-                <button class="recommendations-top__button">
-                  <a href="" class="recommendations-top__link">Купить</a>
+                <button class="recommendations-top__button">Купить
                 </button>
               </div>
               <!-- /.recommendations-top__info -->
@@ -234,8 +219,7 @@
                 <h3 class="recommendations-top__name">Hacking Growth
                 Break Problem</h3>
                 <span class="recommendations-top__price">$23.00</span>
-                <button class="recommendations-top__button">
-                  <a href="" class="recommendations-top__link">Купить</a>
+                <button class="recommendations-top__button">Купить
                 </button>
               </div>
               <!-- /.recommendations-top__info -->
@@ -247,8 +231,7 @@
                 <h3 class="recommendations-top__name">Very Nice a
                 Novel by Mercy</h3>
                 <span class="recommendations-top__price">$23.00</span>
-                <button class="recommendations-top__button">
-                  <a href="" class="recommendations-top__link">Купить</a>
+                <button class="recommendations-top__button">Купить
                 </button>
               </div>
               <!-- /.recommendations-top__info -->
@@ -260,8 +243,7 @@
                 <h3 class="recommendations-top__name">Hooked : How to
                 Build Products</h3>
                 <span class="recommendations-top__price">$23.00</span>
-                <button class="recommendations-top__button">
-                  <a href="" class="recommendations-top__link">Купить</a>
+                <button class="recommendations-top__button">Купить
                 </button>
               </div>
               <!-- /.recommendations-top__info -->
@@ -298,7 +280,7 @@
             <div class="swiper-slide genres-swiper__slide">
               <div class="genres-swiper__item">
                 <img src="img/icon-genres-2.svg" alt="" class="genres-swiper__img">
-                <h3 class="genres-swiper__title">Самомотиватия</h3>
+                <h3 class="genres-swiper__title">Самомотивация</h3>
                 <span class="genres-swiper__text">Книги о мотивации</span>
               </div>
             </div>
@@ -316,11 +298,53 @@
                 <span class="genres-swiper__text">Книги для самоподготовки</span>
               </div>
             </div>
+            <div class="swiper-slide genres-swiper__slide genres-swiper__slide-mobile">
+              <div class="genres-swiper__item">
+                <img src="img/icon-genres-1.svg" alt="" class="genres-swiper__img">
+                <h3 class="genres-swiper__title">Саморазвитие</h3>
+                <span class="genres-swiper__text">Книги о саморазвитии</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-container mySwiper genres-container mobile-swiper">
+          <div class="swiper-wrapper genres-swiper">
+            <div class="swiper-slide genres-swiper__slide">
+              <div class="genres-swiper__item">
+                <img src="img/icon-genres-3.svg" alt="" class="genres-swiper__img">
+                <h3 class="genres-swiper__title">Романы Теленовеллы</h3>
+                <span class="genres-swiper__text">Книги с крутыми историями</span>
+              </div>
+            </div>
+            <div class="swiper-slide genres-swiper__slide">
+              <div class="genres-swiper__item">
+                <img src="img/icon-genres-4.svg" alt="" class="genres-swiper__img">
+                <h3 class="genres-swiper__title">Навыки будущего</h3>
+                <span class="genres-swiper__text">Книги для самоподготовки</span>
+              </div>
+            </div>
+            <div class="swiper-slide genres-swiper__slide">
+              <div class="genres-swiper__item">
+                <img src="img/icon-genres-2.svg" alt="" class="genres-swiper__img">
+                <h3 class="genres-swiper__title">Самомотивация</h3>
+                <span class="genres-swiper__text">Книги о мотивации</span>
+              </div>
+            </div>
+            <div class="swiper-slide genres-swiper__slide">
+              <div class="genres-swiper__item">
+                <img src="img/icon-genres-1.svg" alt="" class="genres-swiper__img">
+                <h3 class="genres-swiper__title">Бизнес & Финансы</h3>
+                <span class="genres-swiper__text">Книги про мир бизнеса</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div class="genres-wrapper__bottom">
-        <button class="genres-swiper__button">
+        <button class="genres-swiper__button genres-swiper__button-prev">
+          <img class="genres-swiper__button-img genres-swiper__button-img-prev" src="img/arrow.svg" alt="">
+        </button>
+        <button class="genres-swiper__button genres-swiper__button-next">
           <img class="genres-swiper__button-img" src="img/arrow.svg" alt="">
         </button>
       </div>
@@ -329,6 +353,268 @@
     <!-- /.container -->
   </div>
   <!-- /.genres -->
+  <div class="unreleased">
+    <div class="container">
+      <div class="unreleased-wrapper">
+        <div class="unreleased-wrapper__top">
+          <h2 class="unreleased-wrapper__title">Неизданные книги</h2>
+          <div class="unreleased-wrapper__button">
+            <button class="unreleased-wrapper__prev">
+              <img class="unreleased-wrapper__icon" src="img/arrow-prev.png" alt="">
+            </button>
+            <button class="unreleased-wrapper__next">
+              <img class="unreleased-wrapper__icon" src="img/arrow-next.png" alt="">
+            </button>
+          </div>
+          <!-- /.unreleased-wrapper__button -->
+        </div>
+        <div class="swiper-container mySwiper unreleased-container">
+          <div class="swiper-wrapper unreleased-swiper">
+            <div class="swiper-slide unreleased-swiper__slide">
+              <img src="img/item/unreleased-1.jpg" alt="" class="unreleased-swiper__img">
+            </div>
+            <div class="swiper-slide unreleased-swiper__slide">
+              <img src="img/item/unreleased-2.jpg" alt="" class="unreleased-swiper__img">
+            </div>
+            <div class="swiper-slide unreleased-swiper__slide">
+              <img src="img/item/unreleased-3.jpg" alt="" class="unreleased-swiper__img">
+            </div>
+            <div class="swiper-slide unreleased-swiper__slide">
+              <img src="img/item/unreleased-4.jpg" alt="" class="unreleased-swiper__img">
+            </div>
+            <div class="swiper-slide unreleased-swiper__slide">
+              <img src="img/item/unreleased-5.jpg" alt="" class="unreleased-swiper__img">
+            </div>
+            <div class="swiper-slide unreleased-swiper__slide">
+              <img src="img/item/unreleased-6.jpg" alt="" class="unreleased-swiper__img">
+            </div>
+            <div class="swiper-slide unreleased-swiper__slide">
+              <img src="img/item/unreleased-7.jpg" alt="" class="unreleased-swiper__img">
+            </div>
+            <div class="swiper-slide unreleased-swiper__slide">
+              <img src="img/item/unreleased-8.jpg" alt="" class="unreleased-swiper__img">
+            </div>
+          </div>
+          <!-- /.unreleased-swiper -->
+        </div>
+        <!-- /.unreleased-container -->
+      </div>
+      <!-- /.unreleased-wrapper -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.unreleased -->
+  <div class="story">
+    <div class="container">
+      <div class="story-wrapper">
+        <div class="story-wrapper__top">
+          <h2 class="story-wrapper__title">История Автора</h2>
+          <p class="story-wrapper__description">Это раздел авторского рассказа. Каждую неделю мы стараемся рассказать вам историю писателя. Расскажем всем <br>
+          о закулисье их книг.</p>
+        </div>
+        <!-- /.story-wrapper__top -->
+        <div class="story-wrapper__video">
+          <div id="player" class="story-wrapper__item story-wrapper__item--top">
+            <button class="story-wrapper__play story-wrapper__play--top">
+              <img src="img/video/play-top.png" alt="" class="story-wrapper__icon story-wrapper__icon--top">
+            </button>
+          </div>
+          <!-- /.story-wrapper__item-central -->
+          <div class="story-wrapper__container">
+            <div class="story-wrapper__item story-wrapper__item--left">
+              <a data-fancybox href="https://youtu.be/HabyPSr68TI" class="story-wrapper__play">
+                <img src="img/video/play.png" alt="" class="story-wrapper__icon">
+              </a>
+            </div>
+            <div class="story-wrapper__info">
+              <h3 class="story-wrapper__autor">Emelda Scandroot</h3>
+              <button class="story-wrapper__favorites">
+                <img src="img/video/favorites.png" alt="" class="story-wrapper__favorites-icon">
+              </button>
+              <p class="story-wrapper__text">Author of Books Tittle</p>
+            </div>
+            <!-- /.story-wrapper__item -->
+          </div>
+          <div class="story-wrapper__container">
+            <div class="story-wrapper__item story-wrapper__item--central">
+              <a data-fancybox href="https://youtu.be/zu_9yWNo0nU" class="story-wrapper__play">
+                <img src="img/video/play.png" alt="" class="story-wrapper__icon">
+              </a>
+            </div>
+            <div class="story-wrapper__info">
+              <h3 class="story-wrapper__autor">Mar Rueda</h3>
+              <button class="story-wrapper__favorites">
+                <img src="img/video/favorites.png" alt="" class="story-wrapper__favorites-icon">
+              </button>
+              <p class="story-wrapper__text">Author of Books Tittle</p>
+            </div>
+            <!-- /.story-wrapper__item -->
+          </div>
+          <div class="story-wrapper__container story-wrapper__container--mobile">
+            <div class="story-wrapper__item story-wrapper__item--right">
+              <a data-fancybox href="https://youtu.be/c1G7Qiuv17s" class="story-wrapper__play">
+                <img src="img/video/play.png" alt="" class="story-wrapper__icon">
+              </a>
+            </div>
+            <div class="story-wrapper__info">
+              <h3 class="story-wrapper__autor">Nembo Lukeni</h3>
+              <button class="story-wrapper__favorites">
+                <img src="img/video/favorites.png" alt="" class="story-wrapper__favorites-icon">
+              </button>
+              <p class="story-wrapper__text">Author of Books Tittle</p>
+            </div>
+            <!-- /.story-wrapper__item -->
+          </div>
+          <!-- /.story-wrapper__container -->
+        </div>
+        <!-- /.story-wrapper__video -->
+      </div>
+      <!-- /.story-wrapper -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.story -->
+
+  <div class="publishers">
+    <div class="container">
+      <div class="publishers-container">
+        <h3 class="publishers-container__title">Некоторые из издателей, с которыми мы сотрудничали</h3>
+        <div class="publishers-wrapper">
+          <div class="publishers-wrapper__top">
+            <a target="_blank" href="https://slack.com/intl/en-ua/" class="publishers-wrapper__link">
+              <img src="img/publishers/slack.png" alt="" class="publishers-wrapper__icon publishers-wrapper__icon--slack">
+            </a>
+            <a target="_blank" href="https://www.netflix.com/ua-ru/" class="publishers-wrapper__link">
+              <img src="img/publishers/netflix.png" alt="" class="publishers-wrapper__icon publishers-wrapper__icon--netflix">
+            </a>
+            <a target="_blank" href="https://www.fitbit.com/global/us/home" class="publishers-wrapper__link">
+              <img src="img/publishers/fitbit.png" alt="" class="publishers-wrapper__icon publishers-wrapper__icon--fitbit">
+            </a>
+            <a target="_blank" href="https://about.google/intl/ru/" class="publishers-wrapper__link">
+              <img src="img/publishers/google.png" alt="" class="publishers-wrapper__icon publishers-wrapper__icon--google">
+            </a>
+            <a target="_blank" href="https://www.airbnb.ru/" class="publishers-wrapper__link">
+              <img src="img/publishers/airbnb.png" alt="" class="publishers-wrapper__icon publishers-wrapper__icon--airbnb">
+            </a>
+            <a target="_blank" href="https://www.uber.com/ua/ru/" class="publishers-wrapper__link">
+              <img src="img/publishers/uber.png" alt="" class="publishers-wrapper__icon publishers-wrapper__icon--uber">
+            </a>
+          </div>
+          <!-- /.publishers-wrapper__top -->
+          <div class="publishers-wrapper__bottom">
+            <a target="_blank" href="https://www.netflix.com/ua-ru/" class="publishers-wrapper__link">
+              <img src="img/publishers/netflix.png" alt="" class="publishers-wrapper__icon">
+            </a>
+            <a target="_blank" href="https://www.airbnb.ru/" class="publishers-wrapper__link">
+              <img src="img/publishers/airbnb.png" alt="" class="publishers-wrapper__icon">
+            </a>
+            <a target="_blank" href="https://slack.com/intl/en-ua/" class="publishers-wrapper__link">
+              <img src="img/publishers/slack.png" alt="" class="publishers-wrapper__icon">
+            </a>
+            <a target="_blank" href="https://www.uber.com/ua/ru/" class="publishers-wrapper__link">
+              <img src="img/publishers/uber.png" alt="" class="publishers-wrapper__icon">
+            </a>
+            <a target="_blank" href="https://www.fitbit.com/global/us/home" class="publishers-wrapper__link">
+              <img src="img/publishers/fitbit.png" alt="" class="publishers-wrapper__icon">
+            </a>
+            <a target="_blank" href="https://about.google/intl/ru/" class="publishers-wrapper__link">
+              <img src="img/publishers/google.png" alt="" class="publishers-wrapper__icon">
+            </a>
+          </div>
+          <!-- /.publishers-wrapper__bottom -->
+        </div>
+        <!-- /.publishers-wrapper -->
+      </div>
+      <!-- /.publishers-container -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.publishers -->
+
+  <div class="blog">
+    <div class="container">
+      <div class="blog-wrapper">
+        <div class="blog-wrapper__top">
+          <h2 class="blog-wrapper__title">Ehya Блог</h2>
+          <a href="#" class="blog-wrapper__button">Все Блоги</a>
+        </div>
+        <!-- /.blog-wrapper__top -->
+        <div class="blog-wrapper__central">
+          <img src="img/blog/central.jpg" alt="" class="news blog-wrapper__img blog-wrapper__img--central">
+          <h3 class="news blog-wrapper__news-title blog-wrapper__news-title--central">Success Steps For Your Business Life</h3>
+          <p class="blog-wrapper__text">This is the author story section. Every week we try to give you the story of book writer. Tell all of you the behind the
+          scene of their books.</p>
+        </div>
+        <!-- /.blog-wrapper__central -->
+        <div class="blog-wrapper__other">
+          <div class="blog-wrapper__item">
+            <img src="img/blog/news-1.jpg" alt="" class="news blog-wrapper__img">
+            <div class="blog-wrapper__info">
+              <span class="blog-wrapper__data">23 марта 2020</span>
+              <h3 class="news blog-wrapper__news-title blog-wrapper__news-title--first">29 Motivational Quotes
+              for Work Environments</h3>
+              <a target="_blank" href="#" class="link blog-wrapper__link">Читать</a>
+            </div>
+          </div>
+          <!-- /.blog-wrapper__item -->
+          <div class="blog-wrapper__item">
+            <img src="img/blog/news-2.jpg" alt="" class="news blog-wrapper__img">
+            <div class="blog-wrapper__info">
+              <span class="blog-wrapper__data">28 марта 2020</span>
+              <h3 class="news blog-wrapper__news-title">Learn To Love Growth<br> and You Will Be A Success</h3>
+              <a target="_blank" href="#" class="link blog-wrapper__link">Читать</a>
+            </div>
+          </div>
+          <!-- /.blog-wrapper__item -->
+          <div class="blog-wrapper__item">
+            <img src="img/blog/news-3.jpg" alt="" class="news blog-wrapper__img">
+            <div class="blog-wrapper__info">
+              <span class="blog-wrapper__data">28 марта 2020</span>
+              <h3 class="news blog-wrapper__news-title">Motivation How To Build
+              Trust at your Work</h3>
+              <a target="_blank" href="#" class="link blog-wrapper__link">Читать</a>
+            </div>
+          </div>
+          <!-- /.blog-wrapper__item -->
+        </div>
+        <!-- /.blog-wrapper__other -->
+        
+      </div>
+      <!-- /.blog-wrapper -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.blog -->
+
+  <div class="registration">
+    <div class="container">
+      <div class="registration-container">
+        <div class="registration-wrapper">
+          <div class="oval registration-wrapper__oval registration-wrapper__oval--first"></div>
+          <div class="oval registration-wrapper__oval registration-wrapper__oval--second"></div>
+          <div class="oval-background registration-wrapper__background"></div>
+          <h2 class="registration-wrapper__title">Будь первым, кто узнает<br class="registration-wrapper__br"> о наших акциях</h2>
+          <form action="send.php" method="POST" class="subscribe registration-wrapper__subscribe subscribe-form">
+            <img src="img/mail.png" alt="" class="registration-wrapper__img">
+            <input type="email" placeholder="Ваш Email" class="registration-wrapper__input subscribe__input" name="email"
+              required style="color: #333333">
+            <button name="button-form" value="mail" class="subscribe__button registration-wrapper__button"
+              type="submit">Регистрация</button>
+          </form>
+        </div>
+        <!-- /.registration-wrapper -->
+      </div>
+      <!-- /.registration-container -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.registration -->
+
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/slick.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>

@@ -1,0 +1,87 @@
+.registration
+  &-container
+    background-color: $blue
+    border-radius: 12px
+  &-wrapper
+    padding-top: 60px
+    padding-bottom: 60px
+    padding-right: 62px
+    padding-left: 60px
+    background-color: transparent
+    height: 236px
+    border-radius: 12px
+    overflow: hidden
+    position: relative
+    display: flex
+    justify-content: space-between
+    z-index: 10
+    &__title
+      font-family: 'Roboto Condensed', sans-serif
+      color: white
+      letter-spacing: 0.2px
+      font-style: normal
+      font-weight: bold
+      font-size: 36px
+      line-height: 48px
+      width: 393px
+      overflow: auto
+    &__subscribe
+      margin-top: 30px
+      overflow: hidden
+      display: flex
+      align-items: center
+      justify-content: space-between
+      width: 447px
+      height: 56px
+      background-color: white
+      border-radius: 8px
+    &__input
+      margin-left: -20px
+      outline: 0
+      border: none
+      &::placeholder
+        color: $placeholder-color
+        font-style: normal
+        font-weight: 600
+        font-size: 16px
+        line-height: 22px
+    &__img
+      margin-left: 20px
+    &__button
+      margin-right: 4px
+      display: flex
+      justify-content: center
+      align-items: center
+      padding: 0 10px
+      width: 163px
+      height: 48px
+      border: none
+      background-color: #FAAD13
+      border-radius: 4px
+      color: white
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 22px
+      cursor: pointer
+      &:hover
+        background-color: #fabf4a
+        box-shadow: inset 0 0 20px #fda900
+    &__oval
+      position: absolute
+      z-index: -2
+      &--first
+        left: -48.77%
+        right: 44.74%
+        top: -415.25%
+        bottom: 12.71%
+      &--second
+        left: 42.5%
+        top: -25.42%
+        background: linear-gradient(270deg, rgba(255, 255, 255, 0.0001) 0%, #FFFFFF 99.73%)
+        opacity: 0.05 !important
+    &__background
+      position: absolute
+      z-index: -1
+      left: 60%
+      top: 60%

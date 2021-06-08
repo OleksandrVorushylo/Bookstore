@@ -39,6 +39,49 @@
         width: 286px
     &-top
       margin-left: 20px
+  .genres
+    &-swiper
+      &__item
+        width: 220px
+      &__title
+        font-size: 18px
+        line-height: 20px
+  .story
+    &-wrapper
+      &__container
+        width: 300px
+  .publishers
+    &-wrapper
+      width: 100%
+      &__top
+        margin-left: 0
+  .blog
+    &-wrapper
+      &__central
+        width: 48%
+      &__other
+        width: 48%
+      &__news-title
+        margin-top: 10px
+        font-size: 16px
+        width: 100%
+        &--central
+          font-size: 20px
+      &__info
+        margin-left: 16px
+      &__data
+        font-size: 12px
+  .blog br
+    display: none
+  .registration
+    &-wrapper
+      &__oval
+        &--first
+          left: -60.77%
+          right: 44.74%
+          top: -435.25%
+          bottom: 12.71%
+        &--second
 @media (max-width: 992px)
   .container
     max-width: 720px
@@ -104,6 +147,64 @@
         width: 100%
       &__info
         margin-left: 48px
+  .story
+    &-wrapper
+      &__container
+        width: 220px
+      &__title
+        font-size: 36px
+        line-height: 60px
+      &__description
+        font-size: 18px
+        line-height: 32px
+        margin-right: 0
+  .blog
+    &-wrapper
+      &__central
+        width: 100%
+      &__other
+        width: 100%
+      &__news-title
+        margin-top: 16px
+        font-size: 22px
+        width: 100%
+        &--central
+          font-size: 24px
+          margin-left: 0
+        &--first
+          width: 100%
+      &__text
+        margin-left: 0
+      &__info
+        padding-top: 0
+        margin-left: 36px
+      &__data
+        margin-top: 0
+        font-size: 14px
+  .registration
+    &-wrapper
+      flex-direction: column
+      height: 336px
+      &__title
+        font-style: 30px
+      &__oval
+        &--first
+          left: -50.77%
+          right: 44.74%
+          top: -155.25%
+          bottom: 12.71%
+        &--second
+          left: 42.5%
+          top: 10.42%
+      &__background
+        left: 60%
+        top: 44%
+    .oval
+      width: 666px
+      height: 666px
+      &-background
+        width: 442px
+        height: 442px
 @media (max-width: 767px)
   br
     display: none
@@ -220,9 +321,152 @@
       &__name
         font-size: 16px
         line-height: 24px
+    &-bottom
+      &__line
+        margin-top: 56px
+  .genres
+    padding-top: 55px
+    padding-bottom: 104px
+    &-wrapper
+    &-swiper
+      &__slide
+        &-mobile
+          display: none
+      &__item
+        width: 99%
+        height: 182px
+        padding-top: 20px
+        padding-left: 16px
+        padding-right: 14px
+        padding-bottom: 20px
+        margin-right: 0
+      &__img
+        width: 36px
+      &__title
+        font-family: 'Roboto Condensed', sans-serif
+        font-style: normal
+        font-weight: bold
+        font-size: 16px
+        line-height: 20px
+        margin-top: 16px
+        letter-spacing: 0.2px
+        min-height: 40px
+      &__text
+
+        font-size: 12px
+        line-height: 20px
+        margin-top: 10px
+        width: 110px
+        letter-spacing: 0.2px
+      &__button
+        position: absolute
+        right: 0
+        top: 0
+        transform: none
+        width: 48px
+        height: 48px
+        &-prev
+          margin-left: 12px
+
+        &-next
+          right: -12px
+    &-wrapper
+      &__bottom
+        position: relative
+        display: flex
+        justify-content: center
+        margin: auto
+        margin-top: 36px
+        max-width: 80px
+  .genres .swiper-button-disabled
+    display: block
+  .story
+    &-wrapper
+      &__top
+        justify-content: start
+        flex-direction: column
+        align-items: center
+
+      &__container
+        width: 48%
+        height: 326px
+        &--mobile
+          display: none
+      &__title
+        font-size: 28px
+        line-height: 36px
+        margin-bottom: 22px
+      &__description
+        width: 98%
+        font-size: 18px
+        line-height: 25px
+        margin-right: 0
+        text-align: center
+      &__info
+        justify-content: start
+        flex-direction: column
+      &__autor
+        font-weight: 500
+        font-size: 16px
+        line-height: 20px
+      &__text
+        font-size: 12px
+        line-height: 20px
+      &__favorites
+        margin-top: 16px
+        order: 4
+        &-icon
+  .publishers
+    padding-bottom: 78px
+    &-wrapper
+      &__top
+        flex-wrap: wrap
+        margin-bottom: 0
+      &__bottom
+        display: none
+      &__link
+        display: flex
+        justify-content: center
+        flex-basis: 33%
+        margin-bottom: 23px
+  .blog
+    &-wrapper
+      &__title
+        font-size: 36px
+      &__central
+        margin-bottom: 28px
+      &__other
+      &__news-title
+        font-size: 20px
+        &--central
+        &--first
+      &__info
+      &__data
+  .registration
+    &-wrapper
+      &__title
+        font-size: 30px
+        width: 340px
+      &__subscribe
+        width: 100%
+      &__img
+      &__input
+        width: 40%
+      &__oval
+        &--first
+          left: -50.77%
+          right: 44.74%
+          top: -165.25%
+          bottom: 12.71%
+        &--second
+          left: 42.5%
+          top: 10.42%
+      &__background
+        left: 63%
+        top: 44%
 @media (max-width: 576px)
   .container
-    width: 89%
+    width: 90%
   .about
     padding-top: 34px
     &-wrapper
@@ -312,6 +556,212 @@
       &__line
         margin-top: 4px
         width: 100%
+  .mobile-swiper
+    display: flex
+    margin-top: 10px
+  .unreleased
+    padding-top: 48px
+    padding-bottom: 136px
+    margin-bottom: 44px
+    &-wrapper
+      &__top
+        justify-content: center
+        position: relative
+        margin-bottom: 41px
+      &__title
+        font-size: 28px
+        line-height: 36px
+        text-align: center
+      &__button
+        position: absolute
+        bottom: -452px
+        left: 50%
+        transform: translate(-50%, -50%)
+      &__prev
+        width: 48px
+        height: 48px
+      &__next
+        width: 48px
+        height: 48px
+        margin-left: 16px
+      &__icon
+        width: 14px
+    &-swiper
+      &__slide
+        max-width: 206px
+        height: 300px
+    &-container
+      width: 206px
+  .story
+    &-wrapper
+      &__top
+        margin-bottom: 32px
+      &__container
+        width: 48%
+        height: 229px
+      &__item
+        &--top
+          height: 210px
+          margin-bottom: 20px
+        &--left
+          height: 138px
+        &--central
+          height: 138px
+      &__title
+      &__description
+        margin-right: 0
+      &__play
+        &--top
+          width: 56px
+          height: 56px
+      &__icon
+        width: 21px
+        &--top
+          width: 17px
+      &__info
+        margin-top: 16px
+      &__autor
+        margin-bottom: 8px
+      &__text
+  .publishers
+    margin-top: 43px
+    padding-top: 37px
+    padding-bottom: 36px
+    &-container
+      &__title
+        width: 95%
+        line-height: 30px
+        margin: auto
+    &-wrapper
+      margin-top: 29px
+      &__top
+        flex-wrap: wrap
+        margin: auto
+        margin-bottom: 0
+        width: 90%
+
+      &__bottom
+        display: none
+      &__link
+        display: flex
+        justify-content: center
+        flex-basis: 50%
+        margin-bottom: 23px
+      &__icon
+        width: 86px
+        &--slack
+          width: 98px
+  .blog
+    padding-top: 56px
+    padding-bottom: 128px
+    margin-bottom: 48px
+    &-wrapper
+      &__top
+        justify-content: center
+        position: relative
+        margin-bottom: 48px
+      &__button
+        position: absolute
+        width: 159px
+        bottom: -940px
+        font-size: 14px
+        line-height: 20px
+      &__title
+        font-size: 28px
+        line-height: 36px
+      &__img
+        width: 54%
+        height: 100px
+        &--central
+          width: 100%
+          height: 240px
+      &__central
+        margin-bottom: 28px
+      &__other
+      &__item
+        margin-bottom: 31px
+      &__news-title
+        font-size: 20px
+        font-size: 14px
+        line-height: 20px
+        height: 40px
+        margin-top: 5px
+        &--central
+          height: 30px
+          margin-top: 17px
+          margin-left: 0px
+          font-size: 16px
+          line-height: 20px
+          margin-bottom: 0
+        &--first
+      &__text
+        width: 100%
+        margin-left: 0
+        font-size: 12px
+        line-height: 24px
+        height: 72px
+      &__info
+      &__data
+        font-size: 10px
+        line-height: 20px
+        margin-top: -4px
+        padding: 0
+      &__link
+        letter-spacing: 0.125px
+        font-size: 10px
+        line-height: 20px
+        bottom: 0px
+  .registration .container
+    width: 100%
+  .registration
+    &-container
+      border-radius: 0
+    &-wrapper
+      border-radius: 0
+      padding-top: 26px
+      padding-bottom: 24px
+      padding-right: 24px
+      padding-left: 24px
+      height: 306px
+      &__title
+        font-size: 28px
+        line-height: 36px
+        width: 78%
+      &__br
+        display: flex
+      &__subscribe
+        height: 112px
+        flex-wrap: wrap
+        padding-top: 10px
+        padding-bottom: 6px
+        padding-right: 11px
+        padding-left: 11px
+        margin-top: 26px
+        margin-bottom: 4px
+      &__img
+        margin-left: 9px
+      &__input
+        margin-left: 0
+        width: 85%
+        margin-bottom: 2px
+      &__button
+        height: 42px
+        flex-basis: 100%
+        margin-right: 0px
+      &__oval
+        &--first
+          left: -120.77%
+          right: 44.74%
+          top: -162.25%
+          bottom: 12.71%
+        &--second
+          left: 42.5%
+          top: 54.42%
+      &__background
+        left: -88.77%
+        right: 44.74%
+        top: -122.55%
+        bottom: 12.71%
 @media (max-width: 410px)
   .about
     &-book
@@ -324,7 +774,51 @@
         &-outline
           min-width: 176px
           padding: 0 16px
+  .blog
+    padding-bottom: 52px
+    &-wrapper
+      &__button
+        position: absolute
+        width: 159px
+        bottom: -732px
+        font-size: 14px
+        line-height: 20px
+      &__img
+        border-radius: 5px
+        width: 54%
+        height: 90px
+        &--central
+          width: 100%
+          height: 120px
+      &__info
+        margin-left: 20px
+      &__news-title
+        &--central
+  .blog .container
+    width: 87%
+  .story .container
+    width: 94%
+  .story
+    &-wrapper
+      &__container
+        width: 47%
+      &__description
+        width: 90%
+      &__item
+        &--top
+          background-size: 140%
+          background-position: 90% 30%
+          background-image: url(../img/video/central-top-mob.jpg)
+          height: 210px
 @media (max-width: 320px)
   .about
     &-book
       height: 332px
+  .story
+    &-wrapper
+      &__favorites
+        max-width: 10px
+        max-height: 13px
+        margin-top: 15px
+        order: 4
+        &-icon
