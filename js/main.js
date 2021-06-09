@@ -45,8 +45,8 @@ var genresSwiper = new Swiper(".genres-container", {
         slidesPerColumn: 1,
         // slidesPerColumnFill: row,
         navigation: {
-          nextEl: ".genres-swiper__button-next",
-          prevEl: ".genres-swiper__button-prev",
+          nextEl: ".genres-bottom__button-next",
+          prevEl: ".genres-bottom__button-prev",
         },
         breakpoints: {
     // when window width is >= 320px
@@ -135,3 +135,71 @@ $('.story-wrapper__play--top').on('click', function onYouTubeIframeAPIReady() {
 // favorites.addEventListener("click", function() {
 //   this.classList.add("recommendations-info__fovorites-save");
 // });
+
+var menuButton = document.querySelector(".menu-button")
+menuButton.addEventListener('click', function () {
+  document
+  .querySelector(".navbar-menu")
+  .classList.toggle('navbar-menu--visible');
+});
+
+var modalButton = $(".navbar-menu__button");
+var closeModelButton = $(".close-modal");
+  modalButton.on('click', openModal);
+  closeModelButton.on('click', closeModal);
+
+  function openModal() {
+    var modalOverlay = $(".modal__overlay");
+    var modalDialog = $(".modal__dialog");
+    modalOverlay.addClass("modal__overlay--visible");
+    modalDialog.addClass("modal__dialog--visible");
+  }
+  function closeModal(event) {
+    event.preventDefault();
+    var modalOverlay = $(".modal__overlay");
+    var modalDialog = $(".modal__dialog");
+    modalOverlay.removeClass("modal__overlay--visible");
+    modalDialog.removeClass("modal__dialog--visible");
+  }
+
+  $(document).keydown(function(eventObject) {
+    if (eventObject.keyCode === 27) {
+    eventObject.preventDefault();
+    var modalOverlay = $(".modal__overlay");
+    var modalDialog = $(".modal__dialog");
+    modalOverlay.removeClass("modal__overlay--visible");
+    modalDialog.removeClass("modal__dialog--visible");
+  }
+ });
+
+$('.modal__form').validate({
+   errorClass: "invalid",
+   messages: {
+    name: {
+      required: "Пожалуйста, введите ваше имя",
+      minlength: "Имя должно содержать, как минимум, 2 символа"
+    },
+    email: {
+      required: "Пожалуйста, введите электронную почту",
+      email: "Формат электронной почты: name@domain.com"
+    },
+    phone: { 
+      required: "Пожалуйста, введите ваш номер",
+      phone: "Формат номера: +7 (999) 999-99-99",
+      minlength: "Пожалуйста, введите 11 символов."
+    },
+  },
+ })
+ $('.subscribe-form').validate({
+   errorClass: "subscribe-invalid",
+   messages: {
+    email: {
+      required: "Введите электронную почту",
+      email: "Формат: name@domain.com"
+    },
+  },
+ })
+
+ $('[type=tel]').mask('+7 (000) 000-00-00');
+
+ AOS.init();

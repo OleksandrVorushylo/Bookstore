@@ -4,28 +4,31 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Главная страница</title>
+  <title>Bookstore: Главная страница</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <!-- Шапка сайта -->
-  <header class="header">
+  <header class="header header--mobile">
     <div class="container">
       <div class="navbar">
         <a href="#" class="logo navbar-logo">
           <img src="img/logo.svg" alt="Logo: Ehya" class="logo__image navbar-logo__image">
         </a>
         <div class="navbar-menu">
-          <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Рекомендации</a></li>
-          <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Книги</a></li>
-          <li class="navbar-menu__item navbar-menu__item--position"><a href="#" class="navbar-menu__link">Блог</a></li>
-          <button class="button navbar-menu__button">Получить</button>
+          <a class="link navbar-menu__item navbar-menu__item--first" href="#recommendations">Рекомендации</a>
+          <a class="link navbar-menu__item" href="#book">Книги</a>
+          <a class="link navbar-menu__item navbar-menu__item--position" href="#blog">Блог</a>
+          <button data-toggle="modal" class="button navbar-menu__button">Получить</button>
         </div>
         <!-- /.navbar-menu -->
         <div class="navnar-button">
@@ -62,7 +65,7 @@
         <!-- /.about-info -->
         <div class="about-book">
           <span class="about-book__backgraund"></span>
-          <img src="img/book-title.jpg" alt="Image: Book - Design Theory" class="about-book__img">
+          <img data-aos="zoom-in-up" src="img/book-title.jpg" alt="Image: Book - Design Theory" class="about-book__img">
         </div>
         <!-- /.about-book -->
       </div>
@@ -74,12 +77,12 @@
   <div class="recommendations">
     <div class="container">
       <div class="recommendations-wrapper">
-        <div class="recommendations-info">
-          <h2 class="recommendations-info__title">Рекомендации</h2>
+        <div data-aos="fade-up" data-aos-duration="300" class="recommendations-info">
+          <h2 class="recommendations-info__title">Рекомендации<a id="recommendations"></a></h2>
           <!-- Первая карточка -->
           <div class="recommendations-info__block">
           <div class="recommendations-info__item recommendations-info__item--first">
-            <img src="img/item/book-1.jpg" alt="Icon: Book" class="recommendations-info__img">
+            <img loading=lazy src="img/item/book-1.jpg" alt="Icon: Book" class="recommendations-info__img">
             <div class="recommendations-info__info">
               <h3 class="recommendations-info__name">The World of
                 Abstract Art</h3>
@@ -99,7 +102,7 @@
           <!-- /.recommendations-info__item -->
           <!-- Вторая карточка -->
           <div class="recommendations-info__item recommendations-info__item--second">
-            <img src="img/item/book-2.jpg" alt="Icon: Book" class="recommendations-info__img">
+            <img loading=lazy src="img/item/book-2.jpg" alt="Icon: Book" class="recommendations-info__img">
             <div class="recommendations-info__info">
               <h3 class="recommendations-info__name">Educated :
                 <br>a Memoir</h3>
@@ -118,7 +121,7 @@
           <!-- /.recommendations-info__item -->
           <!-- Третья карточка -->
           <div class="recommendations-info__item recommendations-info__item--third">
-            <img src="img/item/book-3.jpg" alt="Icon: Book" class="recommendations-info__img">
+            <img loading=lazy src="img/item/book-3.jpg" alt="Icon: Book" class="recommendations-info__img">
             <div class="recommendations-info__info">
               <h3 class="recommendations-info__name">The Blue
                 Flowers Ray…</h3>
@@ -137,7 +140,7 @@
           <!-- /.recommendations-info__item -->
           <!-- Четвертая карточка -->
           <div class="recommendations-info__item recommendations-info__item--fourth">
-            <img src="img/item/book-4.jpg" alt="Icon: Book" class="recommendations-info__img">
+            <img loading=lazy src="img/item/book-4.jpg" alt="Icon: Book" class="recommendations-info__img">
             <div class="recommendations-info__info">
               <h3 class="recommendations-info__name">There There :<br>
                 a Novel by TO</h3>
@@ -156,7 +159,7 @@
           <!-- /.recommendations-info__item -->
           <!-- Пятая карточка -->
           <div class="recommendations-info__item recommendations-info__item--fifth">
-            <img src="img/item/book-5.jpg" alt="Icon: Book" class="recommendations-info__img">
+            <img loading=lazy src="img/item/book-5.jpg" alt="Icon: Book" class="recommendations-info__img">
             <div class="recommendations-info__info">
               <h3 class="recommendations-info__name">WMNDFL :
                 <br>The Inspiration</h3>
@@ -175,7 +178,7 @@
           <!-- /.recommendations-info__item -->
           <!-- Шестая карточка -->
           <div class="recommendations-info__item recommendations-info__item--sixth">
-            <img src="img/item/book-6.jpg" alt="Icon: Book" class="recommendations-info__img">
+            <img loading=lazy src="img/item/book-6.jpg" alt="Icon: Book" class="recommendations-info__img">
             <div class="recommendations-info__info">
               <h3 class="recommendations-info__name">Making<br>
                 Things Happen</h3>
@@ -194,15 +197,15 @@
           <!-- /.recommendations-info__item -->
           </div>
           <!-- /.recommendations-info__block -->
-          <button class="recommendations-info__button-more">Больше рекомендаций</button>
+          <button class="link recommendations-info__button-more">Больше рекомендаций</button>
         </div>
         <!-- /.recommendations-info -->
-        <div class="recommendations-top">
+        <div data-aos="fade-up" data-aos-duration="500" class="recommendations-top">
           <h2 class="recommendations-top__title">Топ Месяца</h2>
           <div class="recommendations-top__wrapper">
             <span class="recommendations-top__backgraund"></span>
             <div class="recommendations-top__item">
-              <img src="img/item/book-top-1.jpg" alt="Icon: Book" class="recommendations-top__img">
+              <img loading=lazy src="img/item/book-top-1.jpg" alt="Icon: Book" class="recommendations-top__img">
               <div class="recommendations-top__info">
                 <h3 class="recommendations-top__name">Sprint : Solve,
                 Test in 5 Days</h3>
@@ -214,7 +217,7 @@
             </div>
             <!-- /.recommendations-top__item -->
             <div class="recommendations-top__item">
-              <img src="img/item/book-top-2.jpg" alt="Icon: Book" class="recommendations-top__img">
+              <img loading=lazy src="img/item/book-top-2.jpg" alt="Icon: Book" class="recommendations-top__img">
               <div class="recommendations-top__info">
                 <h3 class="recommendations-top__name">Hacking Growth
                 Break Problem</h3>
@@ -226,7 +229,7 @@
             </div>
             <!-- /.recommendations-top__item -->
             <div class="recommendations-top__item">
-              <img src="img/item/book-top-3.jpg" alt="Icon: Book" class="recommendations-top__img">
+              <img loading=lazy src="img/item/book-top-3.jpg" alt="Icon: Book" class="recommendations-top__img">
               <div class="recommendations-top__info">
                 <h3 class="recommendations-top__name">Very Nice a
                 Novel by Mercy</h3>
@@ -238,7 +241,7 @@
             </div>
             <!-- /.recommendations-top__item -->
             <div class="recommendations-top__item">
-              <img src="img/item/book-top-4.jpg" alt="Icon: Book" class="recommendations-top__img">
+              <img loading=lazy src="img/item/book-top-4.jpg" alt="Icon: Book" class="recommendations-top__img">
               <div class="recommendations-top__info">
                 <h3 class="recommendations-top__name">Hooked : How to
                 Build Products</h3>
@@ -250,7 +253,7 @@
             </div>
             <!-- /.recommendations-top__item -->
             <span class="recommendations-top__line"></span>
-            <button class="recommendations-top__button-best">Лучшие книги</button>
+            <button class="link recommendations-top__button-best">Лучшие книги</button>
           </div>
           <!-- /.recommendations-top__wrapper -->
         </div>
@@ -272,35 +275,35 @@
           <div class="swiper-wrapper genres-swiper">
             <div class="swiper-slide genres-swiper__slide">
               <div class="genres-swiper__item">
-                <img src="img/icon-genres-1.svg" alt="" class="genres-swiper__img">
+                <img loading=lazy src="img/icon-genres-1.svg" alt="" class="genres-swiper__img">
                 <h3 class="genres-swiper__title">Бизнес & Финансы</h3>
                 <span class="genres-swiper__text">Книги про мир бизнеса</span>
               </div>
             </div>
             <div class="swiper-slide genres-swiper__slide">
               <div class="genres-swiper__item">
-                <img src="img/icon-genres-2.svg" alt="" class="genres-swiper__img">
+                <img loading=lazy src="img/icon-genres-2.svg" alt="" class="genres-swiper__img">
                 <h3 class="genres-swiper__title">Самомотивация</h3>
                 <span class="genres-swiper__text">Книги о мотивации</span>
               </div>
             </div>
             <div class="swiper-slide genres-swiper__slide">
               <div class="genres-swiper__item">
-                <img src="img/icon-genres-3.svg" alt="" class="genres-swiper__img">
+                <img loading=lazy src="img/icon-genres-3.svg" alt="" class="genres-swiper__img">
                 <h3 class="genres-swiper__title">Романы Теленовеллы</h3>
                 <span class="genres-swiper__text">Книги с крутыми историями</span>
               </div>
             </div>
             <div class="swiper-slide genres-swiper__slide">
               <div class="genres-swiper__item">
-                <img src="img/icon-genres-4.svg" alt="" class="genres-swiper__img">
+                <img loading=lazy src="img/icon-genres-4.svg" alt="" class="genres-swiper__img">
                 <h3 class="genres-swiper__title">Навыки будущего</h3>
                 <span class="genres-swiper__text">Книги для самоподготовки</span>
               </div>
             </div>
             <div class="swiper-slide genres-swiper__slide genres-swiper__slide-mobile">
               <div class="genres-swiper__item">
-                <img src="img/icon-genres-1.svg" alt="" class="genres-swiper__img">
+                <img loading=lazy src="img/icon-genres-1.svg" alt="" class="genres-swiper__img">
                 <h3 class="genres-swiper__title">Саморазвитие</h3>
                 <span class="genres-swiper__text">Книги о саморазвитии</span>
               </div>
@@ -311,28 +314,28 @@
           <div class="swiper-wrapper genres-swiper">
             <div class="swiper-slide genres-swiper__slide">
               <div class="genres-swiper__item">
-                <img src="img/icon-genres-3.svg" alt="" class="genres-swiper__img">
+                <img loading=lazy src="img/icon-genres-3.svg" alt="" class="genres-swiper__img">
                 <h3 class="genres-swiper__title">Романы Теленовеллы</h3>
                 <span class="genres-swiper__text">Книги с крутыми историями</span>
               </div>
             </div>
             <div class="swiper-slide genres-swiper__slide">
               <div class="genres-swiper__item">
-                <img src="img/icon-genres-4.svg" alt="" class="genres-swiper__img">
+                <img loading=lazy src="img/icon-genres-4.svg" alt="" class="genres-swiper__img">
                 <h3 class="genres-swiper__title">Навыки будущего</h3>
                 <span class="genres-swiper__text">Книги для самоподготовки</span>
               </div>
             </div>
             <div class="swiper-slide genres-swiper__slide">
               <div class="genres-swiper__item">
-                <img src="img/icon-genres-2.svg" alt="" class="genres-swiper__img">
+                <img loading=lazy src="img/icon-genres-2.svg" alt="" class="genres-swiper__img">
                 <h3 class="genres-swiper__title">Самомотивация</h3>
                 <span class="genres-swiper__text">Книги о мотивации</span>
               </div>
             </div>
             <div class="swiper-slide genres-swiper__slide">
               <div class="genres-swiper__item">
-                <img src="img/icon-genres-1.svg" alt="" class="genres-swiper__img">
+                <img loading=lazy src="img/icon-genres-1.svg" alt="" class="genres-swiper__img">
                 <h3 class="genres-swiper__title">Бизнес & Финансы</h3>
                 <span class="genres-swiper__text">Книги про мир бизнеса</span>
               </div>
@@ -340,24 +343,24 @@
           </div>
         </div>
       </div>
-      <div class="genres-wrapper__bottom">
-        <button class="genres-swiper__button genres-swiper__button-prev">
-          <img class="genres-swiper__button-img genres-swiper__button-img-prev" src="img/arrow.svg" alt="">
+      <div class="genres-bottom">
+        <button class="genres-bottom__button genres-bottom__button-prev">
+          <img class="genres-bottom__button-img genres-bottom__button-img-prev" src="img/arrow.svg" alt="">
         </button>
-        <button class="genres-swiper__button genres-swiper__button-next">
-          <img class="genres-swiper__button-img" src="img/arrow.svg" alt="">
+        <button class="genres-bottom__button genres-bottom__button-next">
+          <img class="genres-bottom__button-img" src="img/arrow.svg" alt="">
         </button>
       </div>
-      <!-- /.genres-wrapper -->
+      <!-- /.genres-bottom -->
     </div>
     <!-- /.container -->
   </div>
   <!-- /.genres -->
-  <div class="unreleased">
+  <div data-aos-duration="400" data-aos="fade-up" class="unreleased">
     <div class="container">
       <div class="unreleased-wrapper">
         <div class="unreleased-wrapper__top">
-          <h2 class="unreleased-wrapper__title">Неизданные книги</h2>
+          <h2 class="unreleased-wrapper__title">Неизданные книги<a id="book"></a></h2>
           <div class="unreleased-wrapper__button">
             <button class="unreleased-wrapper__prev">
               <img class="unreleased-wrapper__icon" src="img/arrow-prev.png" alt="">
@@ -371,28 +374,28 @@
         <div class="swiper-container mySwiper unreleased-container">
           <div class="swiper-wrapper unreleased-swiper">
             <div class="swiper-slide unreleased-swiper__slide">
-              <img src="img/item/unreleased-1.jpg" alt="" class="unreleased-swiper__img">
+              <img loading=lazy src="img/item/unreleased-1.jpg" alt="" class="unreleased-swiper__img">
             </div>
             <div class="swiper-slide unreleased-swiper__slide">
-              <img src="img/item/unreleased-2.jpg" alt="" class="unreleased-swiper__img">
+              <img loading=lazy src="img/item/unreleased-2.jpg" alt="" class="unreleased-swiper__img">
             </div>
             <div class="swiper-slide unreleased-swiper__slide">
-              <img src="img/item/unreleased-3.jpg" alt="" class="unreleased-swiper__img">
+              <img loading=lazy src="img/item/unreleased-3.jpg" alt="" class="unreleased-swiper__img">
             </div>
             <div class="swiper-slide unreleased-swiper__slide">
-              <img src="img/item/unreleased-4.jpg" alt="" class="unreleased-swiper__img">
+              <img loading=lazy src="img/item/unreleased-4.jpg" alt="" class="unreleased-swiper__img">
             </div>
             <div class="swiper-slide unreleased-swiper__slide">
-              <img src="img/item/unreleased-5.jpg" alt="" class="unreleased-swiper__img">
+              <img loading=lazy src="img/item/unreleased-5.jpg" alt="" class="unreleased-swiper__img">
             </div>
             <div class="swiper-slide unreleased-swiper__slide">
-              <img src="img/item/unreleased-6.jpg" alt="" class="unreleased-swiper__img">
+              <img loading=lazy src="img/item/unreleased-6.jpg" alt="" class="unreleased-swiper__img">
             </div>
             <div class="swiper-slide unreleased-swiper__slide">
-              <img src="img/item/unreleased-7.jpg" alt="" class="unreleased-swiper__img">
+              <img loading=lazy src="img/item/unreleased-7.jpg" alt="" class="unreleased-swiper__img">
             </div>
             <div class="swiper-slide unreleased-swiper__slide">
-              <img src="img/item/unreleased-8.jpg" alt="" class="unreleased-swiper__img">
+              <img loading=lazy src="img/item/unreleased-8.jpg" alt="" class="unreleased-swiper__img">
             </div>
           </div>
           <!-- /.unreleased-swiper -->
@@ -475,50 +478,50 @@
   </div>
   <!-- /.story -->
 
-  <div class="publishers">
+  <div data-aos-duration="400" data-aos="fade-up"    class="publishers">
     <div class="container">
       <div class="publishers-container">
         <h3 class="publishers-container__title">Некоторые из издателей, с которыми мы сотрудничали</h3>
         <div class="publishers-wrapper">
           <div class="publishers-wrapper__top">
             <a target="_blank" href="https://slack.com/intl/en-ua/" class="publishers-wrapper__link">
-              <img src="img/publishers/slack.png" alt="" class="publishers-wrapper__icon publishers-wrapper__icon--slack">
+              <img loading=lazy src="img/publishers/slack.png" alt="" class="publishers-wrapper__icon publishers-wrapper__icon--slack">
             </a>
             <a target="_blank" href="https://www.netflix.com/ua-ru/" class="publishers-wrapper__link">
-              <img src="img/publishers/netflix.png" alt="" class="publishers-wrapper__icon publishers-wrapper__icon--netflix">
+              <img loading=lazy src="img/publishers/netflix.png" alt="" class="publishers-wrapper__icon publishers-wrapper__icon--netflix">
             </a>
             <a target="_blank" href="https://www.fitbit.com/global/us/home" class="publishers-wrapper__link">
-              <img src="img/publishers/fitbit.png" alt="" class="publishers-wrapper__icon publishers-wrapper__icon--fitbit">
+              <img loading=lazy src="img/publishers/fitbit.png" alt="" class="publishers-wrapper__icon publishers-wrapper__icon--fitbit">
             </a>
             <a target="_blank" href="https://about.google/intl/ru/" class="publishers-wrapper__link">
-              <img src="img/publishers/google.png" alt="" class="publishers-wrapper__icon publishers-wrapper__icon--google">
+              <img loading=lazy src="img/publishers/google.png" alt="" class="publishers-wrapper__icon publishers-wrapper__icon--google">
             </a>
             <a target="_blank" href="https://www.airbnb.ru/" class="publishers-wrapper__link">
-              <img src="img/publishers/airbnb.png" alt="" class="publishers-wrapper__icon publishers-wrapper__icon--airbnb">
+              <img loading=lazy src="img/publishers/airbnb.png" alt="" class="publishers-wrapper__icon publishers-wrapper__icon--airbnb">
             </a>
             <a target="_blank" href="https://www.uber.com/ua/ru/" class="publishers-wrapper__link">
-              <img src="img/publishers/uber.png" alt="" class="publishers-wrapper__icon publishers-wrapper__icon--uber">
+              <img loading=lazy src="img/publishers/uber.png" alt="" class="publishers-wrapper__icon publishers-wrapper__icon--uber">
             </a>
           </div>
           <!-- /.publishers-wrapper__top -->
           <div class="publishers-wrapper__bottom">
             <a target="_blank" href="https://www.netflix.com/ua-ru/" class="publishers-wrapper__link">
-              <img src="img/publishers/netflix.png" alt="" class="publishers-wrapper__icon">
+              <img loading=lazy src="img/publishers/netflix.png" alt="" class="publishers-wrapper__icon">
             </a>
             <a target="_blank" href="https://www.airbnb.ru/" class="publishers-wrapper__link">
-              <img src="img/publishers/airbnb.png" alt="" class="publishers-wrapper__icon">
+              <img loading=lazy src="img/publishers/airbnb.png" alt="" class="publishers-wrapper__icon">
             </a>
             <a target="_blank" href="https://slack.com/intl/en-ua/" class="publishers-wrapper__link">
-              <img src="img/publishers/slack.png" alt="" class="publishers-wrapper__icon">
+              <img loading=lazy src="img/publishers/slack.png" alt="" class="publishers-wrapper__icon">
             </a>
             <a target="_blank" href="https://www.uber.com/ua/ru/" class="publishers-wrapper__link">
-              <img src="img/publishers/uber.png" alt="" class="publishers-wrapper__icon">
+              <img loading=lazy src="img/publishers/uber.png" alt="" class="publishers-wrapper__icon">
             </a>
             <a target="_blank" href="https://www.fitbit.com/global/us/home" class="publishers-wrapper__link">
-              <img src="img/publishers/fitbit.png" alt="" class="publishers-wrapper__icon">
+              <img loading=lazy src="img/publishers/fitbit.png" alt="" class="publishers-wrapper__icon">
             </a>
             <a target="_blank" href="https://about.google/intl/ru/" class="publishers-wrapper__link">
-              <img src="img/publishers/google.png" alt="" class="publishers-wrapper__icon">
+              <img loading=lazy src="img/publishers/google.png" alt="" class="publishers-wrapper__icon">
             </a>
           </div>
           <!-- /.publishers-wrapper__bottom -->
@@ -535,12 +538,12 @@
     <div class="container">
       <div class="blog-wrapper">
         <div class="blog-wrapper__top">
-          <h2 class="blog-wrapper__title">Ehya Блог</h2>
+          <h2 class="blog-wrapper__title">Ehya Блог<a id="blog"></a></h2>
           <a href="#" class="blog-wrapper__button">Все Блоги</a>
         </div>
         <!-- /.blog-wrapper__top -->
         <div class="blog-wrapper__central">
-          <img src="img/blog/central.jpg" alt="" class="news blog-wrapper__img blog-wrapper__img--central">
+          <img loading=lazy src="img/blog/central.jpg" alt="" class="news blog-wrapper__img blog-wrapper__img--central">
           <h3 class="news blog-wrapper__news-title blog-wrapper__news-title--central">Success Steps For Your Business Life</h3>
           <p class="blog-wrapper__text">This is the author story section. Every week we try to give you the story of book writer. Tell all of you the behind the
           scene of their books.</p>
@@ -548,7 +551,7 @@
         <!-- /.blog-wrapper__central -->
         <div class="blog-wrapper__other">
           <div class="blog-wrapper__item">
-            <img src="img/blog/news-1.jpg" alt="" class="news blog-wrapper__img">
+            <img loading=lazy src="img/blog/news-1.jpg" alt="" class="news blog-wrapper__img">
             <div class="blog-wrapper__info">
               <span class="blog-wrapper__data">23 марта 2020</span>
               <h3 class="news blog-wrapper__news-title blog-wrapper__news-title--first">29 Motivational Quotes
@@ -558,7 +561,7 @@
           </div>
           <!-- /.blog-wrapper__item -->
           <div class="blog-wrapper__item">
-            <img src="img/blog/news-2.jpg" alt="" class="news blog-wrapper__img">
+            <img loading=lazy src="img/blog/news-2.jpg" alt="" class="news blog-wrapper__img">
             <div class="blog-wrapper__info">
               <span class="blog-wrapper__data">28 марта 2020</span>
               <h3 class="news blog-wrapper__news-title">Learn To Love Growth<br> and You Will Be A Success</h3>
@@ -567,7 +570,7 @@
           </div>
           <!-- /.blog-wrapper__item -->
           <div class="blog-wrapper__item">
-            <img src="img/blog/news-3.jpg" alt="" class="news blog-wrapper__img">
+            <img loading=lazy src="img/blog/news-3.jpg" alt="" class="news blog-wrapper__img">
             <div class="blog-wrapper__info">
               <span class="blog-wrapper__data">28 марта 2020</span>
               <h3 class="news blog-wrapper__news-title">Motivation How To Build
@@ -586,7 +589,7 @@
   </div>
   <!-- /.blog -->
 
-  <div class="registration">
+  <div data-aos-duration="400" data-aos="fade-up"  class="registration">
     <div class="container">
       <div class="registration-container">
         <div class="registration-wrapper">
@@ -595,7 +598,7 @@
           <div class="oval-background registration-wrapper__background"></div>
           <h2 class="registration-wrapper__title">Будь первым, кто узнает<br class="registration-wrapper__br"> о наших акциях</h2>
           <form action="send.php" method="POST" class="subscribe registration-wrapper__subscribe subscribe-form">
-            <img src="img/mail.png" alt="" class="registration-wrapper__img">
+            <img loading=lazy src="img/mail.png" alt="" class="registration-wrapper__img">
             <input type="email" placeholder="Ваш Email" class="registration-wrapper__input subscribe__input" name="email"
               required style="color: #333333">
             <button name="button-form" value="mail" class="subscribe__button registration-wrapper__button"
@@ -609,12 +612,109 @@
     <!-- /.container -->
   </div>
   <!-- /.registration -->
+  <div class="footer">
+    <div class="container">
+      <div class="footer-wrapper">
+        <div data-aos-duration="200" data-aos="fade-up" class="footer-wrapper__info">
+          <a href="#" class="logo footer-wrapper__logo">
+            <img loading=lazy src="img/logo.svg" alt="Logo: Ehya" class="logo__image footer-wrapper__image">
+          </a>
+          <p class="footer-wrapper__text">Создайте современный и креативный веб-сайт с crealand</p>
+          <div class="footer-wrapper__links">
+            <a target="_blank" href="https://about.google/" class="footer-wrapper__social">
+              <img loading=lazy src="img/google.png" alt="" class="footer-wrapper__icon">
+            </a>
+            <a target="_blank" href="https://twitter.com/?lang=ru"  class="footer-wrapper__social">
+              <img loading=lazy src="img/twitter.png" alt="" class="footer-wrapper__icon">
+            </a>
+            <a target="_blank" href="https://www.instagram.com/?hl=ru"   class="footer-wrapper__social">
+              <img loading=lazy src="img/instagram.png" alt="" class="footer-wrapper__icon">
+            </a>
+            <a target="_blank" href="https://ru.linkedin.com/"   class="footer-wrapper__social">
+              <img loading=lazy src="img/in.png" alt="" class="footer-wrapper__icon">
+            </a>
+          </div>
+        </div>
+        <!-- /.footer-wrapper__info -->
+        <div data-aos-duration="300" data-aos="fade-up" class="footer-wrapper__item">
+          <h3 class="footer-wrapper__title">Продукт</h3>
+          <a target="_blank" href="#" class="link footer-wrapper__link">Лэндинг</a>
+          <a target="_blank" href="#" class="link footer-wrapper__link">Функции</a>
+          <a target="_blank" href="#" class="link footer-wrapper__link">Документация</a>
+          <a target="_blank" href="#" class="link footer-wrapper__link">Скидки</a>
+          <a target="_blank" href="#" class="link footer-wrapper__link">Расценки</a>
+        </div>
+        <!-- /.footer-wrapper__item -->
+        <div data-aos-duration="400" data-aos="fade-up" class="footer-wrapper__item">
+          <h3 class="footer-wrapper__title">Сервисы</h3>
+          <a target="_blank" href="#" class="link footer-wrapper__link">Документация</a>
+          <a target="_blank" href="#" class="link footer-wrapper__link">Дизайн</a>
+          <a target="_blank" href="#" class="link footer-wrapper__link">Темы</a>
+          <a target="_blank" href="#" class="link footer-wrapper__link">Илюстрации</a>
+          <a target="_blank" href="#" class="link footer-wrapper__link">UI Kit</a>
+        </div>
+        <!-- /.footer-wrapper__item -->
+        <div data-aos-duration="500" data-aos="fade-up" class="footer-wrapper__item">
+          <h3 class="footer-wrapper__title">Компания</h3>
+          <a target="_blank" href="#" class="link footer-wrapper__link">О нас</a>
+          <a target="_blank" href="#" class="link footer-wrapper__link">Условия</a>
+          <a target="_blank" href="#" class="link footer-wrapper__link">Privacy Policy</a>
+          <a target="_blank" href="#" class="link footer-wrapper__link">Careers</a>
+        </div>
+        <!-- /.footer-wrapper__item -->
+        <div data-aos-duration="600" data-aos="fade-up" class="footer-wrapper__item">
+          <h3 class="footer-wrapper__title">Еще..</h3>
+          <a target="_blank" href="#" class="link footer-wrapper__link">Документация</a>
+          <a target="_blank" href="#" class="link footer-wrapper__link">Лицензия</a>
+          <a target="_blank" href="#" class="link footer-wrapper__link">Изменения</a>
+        </div>
+        <!-- /.footer-wrapper__item -->
+      </div>
+      <!-- /.footer-wrapper -->
+      <div class="footer-bottom">
+        <button data-aos="zoom-in" class="footer-bottom__button">
+          <img src="img/heart-bottom.png" alt="" class="footer-bottom__img">
+        </button>
+        <p class="footer-bottom__text">Copyright © 2019. Crafted with love.</p>
+      </div>
+      <!-- /.footer-bottom -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.footer -->
 
+  <a href="#" class="return-top">
+    <img src="img/return.svg" alt="Вверх">
+  </a>
 
+  <div class="modal">
+    <div class="modal__overlay close-modal">
+  
+    </div>
+    <!-- /.modal__overlay -->
+    <div class="modal__dialog">
+      <a href="#" class="modal__close close-modal"><img src="img/close.svg" alt="Icon: Close" loading=lazy>
+      </a>
+      <h3 class="modal__title">Получить консультацию:</h3>
+      <form action="send.php" method="POST" onsubmit="send(event, 'send.php')" class="modal__form">
+        <input type="text" class="input modal__input" placeholder="Ваше имя*" name="name" required minlength="2">
+        <input type="tel" class="input modal__input" placeholder="Номер телефона*" name="phone" required minlength="18">
+        <input type="email" placeholder="Электронная почта*" class="input modal__input" name="email" required>
+        <textarea class="message modal__message" placeholder="Здесь можете задать интересующий вас вопрос" name="message"></textarea>
+        <button name="button-form" value="modal" class="button modal__button" type="submit">Получить</button>
+        <span class="modal__info">* Обязательно</span>
+      </form>
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal -->
+  
   <script src="https://www.youtube.com/iframe_api"></script>
   <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
-  <script src="js/slick.min.js"></script>
+  <script src="js/aos.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>

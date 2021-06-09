@@ -75,6 +75,12 @@
     display: none
   .registration
     &-wrapper
+      &__title
+        width: 400px
+      &__subscribe
+        width: 400px
+      &__input
+        width: 180px
       &__oval
         &--first
           left: -60.77%
@@ -82,6 +88,11 @@
           top: -435.25%
           bottom: 12.71%
         &--second
+  .footer
+    &-wrapper
+      &__info
+      &__item:last-child
+        margin-right: 0
 @media (max-width: 992px)
   .container
     max-width: 720px
@@ -205,19 +216,202 @@
       &-background
         width: 442px
         height: 442px
+  .footer
+    &-wrapper
+      flex-wrap: wrap
+      &__info
+        order: 5
+        margin-top: 47px
+  // Удаление эффектов
+  .link
+    transition: all 0.0s
+    &:hover
+      text-decoration: none
+
+  button, a
+    transition: all 0.0s
+
+  .navbar
+    &-menu
+      &__button
+        &:hover
+          background-color: inherit
+          color: $blue
+          -webkit-transform: scale(1.0)
+          -ms-transform: scale(1.0)
+          transform: scale(1.0)
+  .logo
+    &:hover
+      -webkit-transform: scale(1.0)
+      -ms-transform: scale(1.0)
+      transform: scale(1.0)
+
+  .about
+    &-info
+      &__button
+        &-outline
+          &:hover
+            background-color: #fff
+            color: $blue
+        &-primary
+          &:hover
+            color: #fff
+            border: none
+            background-color: $blue
+  .recommendations
+    &-info
+      &__button
+        &:hover
+          background-image: none
+          box-shadow: inset 0 0 0px #8f1a37
+      &__fovorites
+        &:hover
+          -webkit-transform: scale(1.0)
+          -ms-transform: scale(1.0)
+          transform: scale(1.0)
+    &-top
+      &__button
+        &:hover
+          background-image: none
+          box-shadow: inset 0 0 0px #8f1a37
+  .genres
+    &-bottom
+      &__button
+        &:hover
+          background-color: #fff
+  .unreleased
+    &-wrapper
+      &__prev
+        &:hover
+          box-shadow: 0px 0px 0px #c0c0c0
+      &__next
+        &:hover
+          box-shadow: 0px 0px 0px #c0c0c0
+
+  .story
+    &-wrapper
+      &__play
+        &:hover
+          -webkit-transform: scale(1.0)
+          -ms-transform: scale(1.0)
+          transform: scale(1.0)
+        &--top
+          &:hover
+            -webkit-transform: scale(1.0)
+            -ms-transform: scale(1.0)
+            transform: scale(1.0)
+            outline: 0
+            box-shadow: 0px 0px 0px #003bfdb6
+      &__favorites
+        &:hover
+          -webkit-transform: scale(1.0)
+          -ms-transform: scale(1.0)
+          transform: scale(1.0)
+
+  .publishers
+    &-wrapper
+      &__link
+        &:hover
+          -webkit-transform: scale(1.0)
+          -ms-transform: scale(1.0)
+          transform: scale(1.0)
+  .blog
+    &-wrapper
+      &__button
+        &:hover
+          border: 2px solid $blue
+          background-color: #fff
+          font-size: inherit
+          color: $blue
+          -webkit-transform: scale(1.0)
+          -ms-transform: scale(1.0)
+          transform: scale(1.0)
+  .registration
+    &-wrapper
+      &__button
+        &:hover
+          background-color: #FAAD13
+          box-shadow: inset 0 0 0px #fda900
+  .footer
+    &-wrapper
+      &__logo
+        &:hover
+          -webkit-transform: scale(1.0)
+          -ms-transform: scale(1.0)
+          transform: scale(1.0)
+      &__social
+        &:hover
+          box-shadow: 0px 0px 0px #dd879c
+    &-bottom
+      &__button
+        &:hover
+          box-shadow: 0px 0px 0px #788fdd
+  .modal
+    &__button
+      &:hover
+        background-color: $dark
+        color: #fff
+  .thankyou
+    &__button
+      &:hover
+        background-color: $dark
+        color: #fff
 @media (max-width: 767px)
   br
     display: none
   .container
     max-width: 576px
     width: 92%
+  .header .container
+    width: 100%
+  .header
+    background-color: #fff
+    &--mobile
+      position: fixed
+      left: 0
+      top: 0
+      right: 0
+      z-index: 99
+
   .navbar
     padding-top: 18px
     padding-bottom: 20px
+    background-color: #fff
+    width: 100%
+    margin: auto
     &-button
       display: flex
     &-menu
       display: none
+      position: fixed
+      margin: auto
+      width: 80%
+      height: 220px
+      left: 0
+      right: 0
+      bottom: auto
+      top: 8%
+      border-radius: 25px
+      background-color: #fff
+      box-shadow: 0px 10px 40px #5f52528c
+      &__item
+        margin: auto
+        margin-top: 20px
+        display: flex
+        justify-content: center
+        align-items: self-start
+        text-align: center
+        &--first
+          margin-left: 20px
+      &__link
+      &__button
+        position: fixed
+        margin: auto
+        left: 0
+        right: 0
+        margin-top: 16px
+      &--visible
+        display: block
   .menu
     &-button
       display: flex
@@ -358,6 +552,13 @@
         margin-top: 10px
         width: 110px
         letter-spacing: 0.2px
+    &-bottom
+      position: relative
+      display: flex
+      justify-content: center
+      margin: auto
+      margin-top: 36px
+      max-width: 80px
       &__button
         position: absolute
         right: 0
@@ -370,14 +571,6 @@
 
         &-next
           right: -12px
-    &-wrapper
-      &__bottom
-        position: relative
-        display: flex
-        justify-content: center
-        margin: auto
-        margin-top: 36px
-        max-width: 80px
   .genres .swiper-button-disabled
     display: block
   .story
@@ -464,11 +657,56 @@
       &__background
         left: 63%
         top: 44%
+  .footer
+    &-wrapper
+      flex-wrap: wrap
+      &__info
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        flex-basis: 100%
+        order: 5
+        margin-top: 8px
+        max-width: 264px
+        margin: auto
+      &__text
+        text-align: center
+      &__item
+        flex-basis: 40%
+        margin-bottom: 39px
+    &-bottom
+      display: none
+  .modal
+    &__dialog
+      min-width: 300px
+      padding: 30px 30px
+    &__button
+      width: 100%
+    &__form
+      margin-bottom: 0
+    &__info
+      margin-top: 10px
+      width: 100%
+@media (max-width: 612px)
+  .container
+    width: 90%
+  .navbar
+    width: 96%
+  .modal
+    &__dialog
+      min-width: 300px
+      padding: 20px 20px
+@media (max-width: 600px)
+  .navbar
+    width: 90%
 @media (max-width: 576px)
   .container
     width: 90%
+  .navbar
+    width: 89%
   .about
-    padding-top: 34px
+    padding-top: 100px
     &-wrapper
       flex-wrap: wrap
     &-book
@@ -717,6 +955,8 @@
     &-container
       border-radius: 0
     &-wrapper
+      justify-content: center
+      align-items: center
       border-radius: 0
       padding-top: 26px
       padding-bottom: 24px
@@ -725,11 +965,13 @@
       height: 306px
       &__title
         font-size: 28px
+        max-width: 272px
         line-height: 36px
         width: 78%
       &__br
         display: flex
       &__subscribe
+        width: 272px
         height: 112px
         flex-wrap: wrap
         padding-top: 10px
@@ -739,15 +981,19 @@
         margin-top: 26px
         margin-bottom: 4px
       &__img
-        margin-left: 9px
+        left: 20px
+        top: 23px
       &__input
-        margin-left: 0
-        width: 85%
-        margin-bottom: 2px
+        left: 46px
+        width: 200px
+        top: 17px
       &__button
         height: 42px
-        flex-basis: 100%
         margin-right: 0px
+        width: 250px
+        top: 58px
+        left: 11px
+        right: 11px
       &__oval
         &--first
           left: -120.77%
@@ -762,6 +1008,33 @@
         right: 44.74%
         top: -122.55%
         bottom: 12.71%
+  .footer
+    padding-top: 48px
+    &-wrapper
+      margin: auto
+      width: 95%
+      &__info
+        margin-top: -8px
+      &__logo
+        height: 27px
+      &__image
+        height: 27px
+      &__text
+        margin-top: 16px
+        height: 56px
+      &__item
+        margin-right: 20px
+      &__item:last-child
+        margin-right: 20px
+      &__title
+        font-size: 16px
+        line-height: 22px
+        margin-bottom: 20px
+      &__link
+        font-size: 14px
+        line-height: 20px
+      &__link:not(:last-child)
+        margin-bottom: 15px
 @media (max-width: 410px)
   .about
     &-book
@@ -810,6 +1083,12 @@
           background-position: 90% 30%
           background-image: url(../img/video/central-top-mob.jpg)
           height: 210px
+  .registration
+    &-container
+    &-wrapper
+      &__title
+        margin-right: 58px
+        margin-bottom: 4px
 @media (max-width: 320px)
   .about
     &-book
@@ -822,3 +1101,19 @@
         margin-top: 15px
         order: 4
         &-icon
+  .blog
+    padding-bottom: 52px
+    &-wrapper
+      &__button
+        position: absolute
+        width: 159px
+        bottom: -732px
+        font-size: 14px
+        line-height: 20px
+      &__img
+        border-radius: 5px
+        width: 90px
+        height: 90px
+        &--central
+          width: 100%
+          height: 120px

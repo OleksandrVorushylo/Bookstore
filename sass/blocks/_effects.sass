@@ -6,6 +6,132 @@
 button, a
   transition: all 0.2s
 
+.navbar
+  &-menu
+    &__button
+      &:hover
+        background-color: $blue
+        color: #fff
+        -webkit-transform: scale(1.1)
+        -ms-transform: scale(1.1)
+        transform: scale(1.1)
+.logo
+  &:hover
+    -webkit-transform: scale(1.1)
+    -ms-transform: scale(1.1)
+    transform: scale(1.1)
+
+.about
+  &-info
+    &__button
+      &-outline
+        &:hover
+          background-color: $blue
+          color: #fff
+      &-primary
+        &:hover
+          color: $blue
+          border: 2px solid #1565D8
+          background-color: transparent
+.recommendations
+  &-info
+    &__button
+      &:hover
+        background-image: linear-gradient(45deg, #183B56 0%, #2b73aa 50%, #1565D8 100%)
+        box-shadow: inset 0 0 4px #8f1a37
+    &__fovorites
+      &:hover
+        -webkit-transform: scale(1.1)
+        -ms-transform: scale(1.1)
+        transform: scale(1.1)
+  &-top
+    &__button
+      &:hover
+        background-image: linear-gradient(45deg, #183B56 0%, #2b73aa 50%, #1565D8 100%)
+        box-shadow: inset 0 0 4px #8f1a37
+.genres
+  &-bottom
+    &__button
+      &:hover
+        background-color: #f3f3f3
+.unreleased
+  &-wrapper
+    &__prev
+      &:hover
+        box-shadow: 0px 0px 4px #c0c0c0
+    &__next
+      &:hover
+        box-shadow: 0px 0px 4px #c0c0c0
+
+.story
+  &-wrapper
+    &__play
+      &:hover
+        -webkit-transform: scale(1.2)
+        -ms-transform: scale(1.2)
+        transform: scale(1.2)
+      &--top
+        &:hover
+          -webkit-transform: scale(1.1)
+          -ms-transform: scale(1.1)
+          transform: scale(1.1)
+          outline: 0
+          box-shadow: 0px 0px 20px #003bfdb6
+    &__favorites
+      &:hover
+        -webkit-transform: scale(1.2)
+        -ms-transform: scale(1.2)
+        transform: scale(1.2)
+
+.publishers
+  &-wrapper
+    &__link
+      &:hover
+        -webkit-transform: scale(1.1)
+        -ms-transform: scale(1.1)
+        transform: scale(1.1)
+.blog
+  &-wrapper
+    &__button
+      &:hover
+        border: 3px solid #1565D8
+        background-color: $blue
+        font-size: 15px
+        color: white
+        -webkit-transform: scale(1.2)
+        -ms-transform: scale(1.2)
+        transform: scale(1.2)
+.registration
+  &-wrapper
+    &__button
+      &:hover
+        background-color: #fabf4a
+        box-shadow: inset 0 0 20px #fda900
+.footer
+  &-wrapper
+    &__logo
+      &:hover
+        -webkit-transform: scale(1.1)
+        -ms-transform: scale(1.1)
+        transform: scale(1.1)
+    &__social
+      &:hover
+        box-shadow: 0px 0px 6px #dd879c
+  &-bottom
+    &__button
+      &:hover
+        box-shadow: 0px 0px 30px #788fdd
+.modal
+  &__button
+    &:hover
+      background-color: white
+      color: $dark
+.thankyou
+  &__button
+    &:hover
+      background-color: $dark
+      color: #fff
+
 .oval
   border: 200px solid linear-gradient(270deg, rgba(255, 255, 255, 0.0001) 0%, #FFFFFF 99.73%)
   width: 1186px
