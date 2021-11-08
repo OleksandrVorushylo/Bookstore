@@ -18,10 +18,10 @@
 </head>
 <body>
   <!-- Шапка сайта -->
-  <header class="header header--mobile">
+  <header id="header" class="header header--mobile">
     <div class="container">
       <div class="navbar">
-        <a href="#" class="logo navbar-logo">
+        <a id="header" href="#" class="logo navbar-logo">
           <img src="img/logo.svg" alt="Logo: Ehya" class="logo__image navbar-logo__image">
         </a>
         <div class="navbar-menu">
@@ -55,6 +55,7 @@
           <h4 class="about-info__autor">Книга Мишеля Янга</h4>
           <p class="about-info__text">Спустя 15 лет я управляю собственной студией, выполнив тысячи проектов для крупных клиентов. Теперь я делюсь своими
           золотыми стратегиями ценообразования на творческую работу.
+          
           </p>
           <div class="about-info__wrapper">
             <a href="https://cutt.ly/Ynk0QHu" class="button about-info__button-primary about-info__link" target="_blank">Купить сейчас</a>
@@ -344,7 +345,7 @@
         </div>
       </div>
       <div class="genres-bottom">
-        <button class="genres-bottom__button genres-bottom__button-prev">
+        <button tabindex="-1" class="swiper-button-disabled genres-bottom__button genres-bottom__button-prev">
           <img class="genres-bottom__button-img genres-bottom__button-img-prev" src="img/arrow.svg" alt="">
         </button>
         <button class="genres-bottom__button genres-bottom__button-next">
@@ -374,28 +375,44 @@
         <div class="swiper-container mySwiper unreleased-container">
           <div class="swiper-wrapper unreleased-swiper">
             <div class="swiper-slide unreleased-swiper__slide">
-              <img loading=lazy src="img/item/unreleased-1.jpg" alt="" class="unreleased-swiper__img">
+              <a href="#" class="unreleased-swiper__link">
+                <img loading=lazy src="img/item/unreleased-1.jpg" alt="" class="unreleased-swiper__img">
+              </a>
             </div>
             <div class="swiper-slide unreleased-swiper__slide">
-              <img loading=lazy src="img/item/unreleased-2.jpg" alt="" class="unreleased-swiper__img">
+              <a href="#" class="unreleased-swiper__link">
+                <img loading=lazy src="img/item/unreleased-2.jpg" alt="" class="unreleased-swiper__img">
+              </a>
             </div>
             <div class="swiper-slide unreleased-swiper__slide">
-              <img loading=lazy src="img/item/unreleased-3.jpg" alt="" class="unreleased-swiper__img">
+              <a href="#" class="unreleased-swiper__link">
+                <img loading=lazy src="img/item/unreleased-3.jpg" alt="" class="unreleased-swiper__img">
+              </a>
             </div>
             <div class="swiper-slide unreleased-swiper__slide">
-              <img loading=lazy src="img/item/unreleased-4.jpg" alt="" class="unreleased-swiper__img">
+              <a href="#" class="unreleased-swiper__link">
+                <img loading=lazy src="img/item/unreleased-4.jpg" alt="" class="unreleased-swiper__img">
+              </a>
             </div>
             <div class="swiper-slide unreleased-swiper__slide">
-              <img loading=lazy src="img/item/unreleased-5.jpg" alt="" class="unreleased-swiper__img">
+              <a href="#" class="unreleased-swiper__link">
+                <img loading=lazy src="img/item/unreleased-5.jpg" alt="" class="unreleased-swiper__img">
+              </a>
             </div>
             <div class="swiper-slide unreleased-swiper__slide">
-              <img loading=lazy src="img/item/unreleased-6.jpg" alt="" class="unreleased-swiper__img">
+              <a href="#" class="unreleased-swiper__link">
+                <img loading=lazy src="img/item/unreleased-6.jpg" alt="" class="unreleased-swiper__img">
+              </a>
             </div>
             <div class="swiper-slide unreleased-swiper__slide">
-              <img loading=lazy src="img/item/unreleased-7.jpg" alt="" class="unreleased-swiper__img">
+              <a href="#" class="unreleased-swiper__link">
+                <img loading=lazy src="img/item/unreleased-7.jpg" alt="" class="unreleased-swiper__img">
+              </a>
             </div>
             <div class="swiper-slide unreleased-swiper__slide">
-              <img loading=lazy src="img/item/unreleased-8.jpg" alt="" class="unreleased-swiper__img">
+              <a href="#" class="unreleased-swiper__link">
+                <img loading=lazy src="img/item/unreleased-8.jpg" alt="" class="unreleased-swiper__img">
+              </a>
             </div>
           </div>
           <!-- /.unreleased-swiper -->
@@ -417,10 +434,10 @@
         </div>
         <!-- /.story-wrapper__top -->
         <div class="story-wrapper__video">
-          <div id="player" class="story-wrapper__item story-wrapper__item--top">
-            <button class="story-wrapper__play story-wrapper__play--top">
+          <div class="story-wrapper__item story-wrapper__item--top">
+            <a data-fancybox href="https://youtu.be/5kq-PzyUlMs" class="story-wrapper__play story-wrapper__play--top">
               <img src="img/video/play-top.png" alt="" class="story-wrapper__icon story-wrapper__icon--top">
-            </button>
+            </a>
           </div>
           <!-- /.story-wrapper__item-central -->
           <div class="story-wrapper__container">
@@ -683,7 +700,7 @@
   </div>
   <!-- /.footer -->
 
-  <a href="#" class="return-top">
+  <a href="#header" class="return-top">
     <img src="img/return.svg" alt="Вверх">
   </a>
 
